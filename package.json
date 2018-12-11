@@ -1,0 +1,15 @@
+{
+  "name": "express-login-system",
+  "version": "0.1.0",
+  "description": "Mongoose + Express Login system",
+  "main": "/",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Aaron Bosley",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.8"
+  }
+}
