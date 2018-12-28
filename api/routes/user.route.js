@@ -76,7 +76,6 @@ router.post('/signin', function (req, res) {
                             expiresIn: '2h'
                         });
                     return res.status(200).json({
-                        success: 'Welcome to the JWT Auth',
                         token: JWTToken,
                         authLevel: user.authLevel,
                         avatarURL: user.avatarURL,
