@@ -2,6 +2,10 @@ const mongoose = require('mongoose');
 
 const user = mongoose.Schema({
     _id: mongoose.Schema.Types.ObjectId,
+    userID: {
+        type: String,
+        required: true
+    },
     firstName: {
         type: String,
         required: true
@@ -31,6 +35,10 @@ const user = mongoose.Schema({
         type: Date,
         required: true
     },
+    age: {
+        type: Number,
+        required: true
+    },
     status: {
         type: String,
         required: false
@@ -48,11 +56,27 @@ const user = mongoose.Schema({
         required: false,
         default: 'Metric'
     },
-    posts:{
+    posts: {
         type: Array,
         required: true
     },
-    emailVerified:{
+    events: {
+        type: Array,
+        required: true
+    },
+    reactions: {
+        type: Array,
+        required: true
+    },
+    comments: {
+        type: Array,
+        required: true
+    },
+    shares: {
+        type: Array,
+        required: true
+    },
+    emailVerified: {
         type: Boolean,
         required: true,
         default: false
