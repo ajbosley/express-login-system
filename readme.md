@@ -12,3 +12,4 @@ Display and visualise a year in the life of you. _With a view to expanding this 
 * Crystal Clear control over your data, what we do with it, and how we can help protect it.
 * Minimal advertising / pay to use system. We do not use your data for targeted advertisments or share with any third parties.
 * Here at Life Graph, we firmly believe social media is for organising and remembering social events, not for memes or fake news.
+* No fluff, just useful stuff.

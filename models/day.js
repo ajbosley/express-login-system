@@ -9,7 +9,11 @@ const day = mongoose.Schema({
         type: String,
         required: true
     },
-    created:{type:Date,required:true, default: new Date()},
+    created: {
+        type: Date,
+        required: true,
+        default: new Date()
+    },
     posts: {
         type: Array,
         required: true

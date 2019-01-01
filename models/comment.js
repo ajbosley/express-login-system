@@ -1,27 +1,36 @@
 const mongoose = require('mongoose');
 
 const comment = mongoose.Schema({
-    commentID:{
+    commentID: {
         type: String,
         required: true
     },
-    replyID:{
+    replyID: {
         type: String,
         required: false
     },
-    userID:{
+    userID: {
         type: String,
         required: true
     },
-    created:{
-        type: Date,
-        required: true
+    postID: {
+        type: String,
+        required: false
     },
-    replies:{
+    eventID: {
+        type: String,
+        required: false
+    },
+    created: {
+        type: Date,
+        required: true,
+        default: new Date()
+    },
+    replies: {
         type: Array,
         required: true
     },
-    reactions:{
+    reactions: {
         type: Array,
         required: true
     }
