@@ -4,12 +4,21 @@
   "description": "Mongoose + Express Login system",
   "main": "/",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "devstart": "nodemon server.js && cd ./front-end/ && index.js"
   },
   "author": "Aaron Bosley",
   "license": "MIT",
   "dependencies": {
+    "bcrypt": "^3.0.3",
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.2.0",
     "express": "^4.16.4",
-    "nodemon": "^1.18.8"
+    "jshint": "^2.9.7",
+    "jsonwebtoken": "^8.4.0",
+    "mongoose": "^5.3.15",
+    "node-gyp": "^3.8.0",
+    "nodemon": "^1.18.8",
+    "uuid": "^3.3.2"
   }
 }
