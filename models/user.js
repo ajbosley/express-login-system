@@ -24,11 +24,12 @@ const user = mongoose.Schema({
     },
     created: {
         type: Date,
-        required: false
+        required: false,
+        default: new Date()
     },
     dob: {
         type: Date,
-        required: false
+        required: true
     },
     status: {
         type: String,
@@ -46,6 +47,15 @@ const user = mongoose.Schema({
         type: String,
         required: false,
         default: 'Metric'
+    },
+    posts:{
+        type: Array,
+        required: true
+    },
+    emailVerified:{
+        type: Boolean,
+        required: true,
+        default: false
     }
 });
 
